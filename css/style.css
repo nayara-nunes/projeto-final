@@ -25,7 +25,7 @@ li{
   --moonShadow:#6D8F94;
   --fontSpace:'Space Mono', monospace;
   --spaceGrotesk:'Space Grotesk', sans-serif;
-  --fontSpaceAge:'Space Age';
+  --fontSpaceAge: 'Orbitron', sans-serif;
    
 
 }
@@ -107,11 +107,11 @@ z-index:2;
   color: var(--white);
   font-family: var(--fontSpaceAge);
   padding: 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 10px;
   letter-spacing: 3px;
   z-index:2;
-  text-transform: uppercase;
+
 }
 .navBar li a{
   color: var(--blueDark);
@@ -151,10 +151,11 @@ transform: scaleX(1);
   justify-content: center;
   align-items: center;
   color: var(--white);
-  font-family: "Space Age";
+  font-family: var(--fontSpaceAge);
   letter-spacing: 4px;
   font-weight: 100;
   font-size: 3.5rem;
+  text-transform: uppercase;
 
 }
 
