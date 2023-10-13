@@ -1,0 +1,187 @@
+@media only screen and (max-width: 768px) {
+.title{
+  font-size: 1.5rem;
+  margin-top: 6rem;
+}
+
+.img{
+  width: 100px;
+  border-bottom-left-radius: 45px;
+  border-top-right-radius: 45px;
+  margin: 3rem 0;
+
+}
+strong{
+  width: 80%;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+.caption{
+  font-size: 1.5rem;
+}
+#biography div{
+  flex-direction: column;
+  margin: 1rem;
+}
+.img-kath{
+  height: 150px;
+  border-radius: 50%;
+}
+.box{
+  width: 100%;
+  padding:30px;
+ 
+
+}
+.box p{
+  font-size: 1rem;
+  line-height: 1rem;
+  text-indent: 40px;
+}
+
+
+.carousel-item div p{
+  font-size: 0.8rem;
+}
+
+.carousel-item{
+  flex: 0 0 300px
+}
+
+
+
+  /* Estilos para dispositivos pequenos */
+  
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to bottom, #000000,#010A24, #181040);
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 999; /* Defina um valor alto para o z-index */
+  transition: transform 0.3s ease;
+}
+
+.menu-hamb {
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  z-index: 1000; /* Defina um valor maior que o z-index do menu */
+}
+
+.hamburguer {
+  width: 30px;
+  height: 3px;
+  background-color: var(--white);
+  display: block;
+  margin: 6px auto;
+  position:relative;
+    left: 40%;
+    top:0px;
+    transition: transform 0.3s ease;
+}
+/* Estilos das barrinhas adicionais */
+.hamburguer::before,
+.hamburguer::after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: var(--white);
+  display: block;
+  position: absolute;
+   /* Posicione as barrinhas adicionais acima */
+}
+
+.hamburguer::after {
+  top: 8px; /* Posicione a segunda barrinha abaixo */
+}
+.hamburguer::before{
+  top: -8px;
+}
+/* Ocultar o menu de navegação inicialmente */
+#menu {
+  display: none;
+}
+
+/* Estilos para o menu de navegação */
+.navBar {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40%;
+
+}
+
+
+.navBar li  a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.8rem;
+ 
+}
+
+/* Mostrar o menu de navegação quando a caixa de seleção estiver marcada */
+#check:checked + label + header #menu {
+  display: block;
+}
+/* Animação ao clicar no hamburguer */
+#check:checked + label .hamburguer {
+  transform: rotate(360deg); 
+  background: linear-gradient(to right, #4f65a7, #8360a0);
+}
+
+#check:checked + label .hamburguer::before {
+transform: rotate(360deg);
+background: linear-gradient(to right, #4f65a7, #8360a0);
+}
+
+#check:checked + label .hamburguer::after {
+  transform: rotate(360deg); /* Rotação para criar um "X" */
+  background: linear-gradient(to right, #4f65a7, #8360a0);
+}
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.carousel-item {
+  flex: 0 0 100%; /* Exibe um slide por vez em telas pequenas */
+  min-height: 200px;
+  margin: 5px;
+}
+.carousel-item div {
+  width: 400px;
+}
+
+@-moz-keyframes rocket-movement { 100% {-moz-transform: translate(400px,-100px);} }
+@-webkit-keyframes rocket-movement {100% {-webkit-transform: translate(400px,-100px); } }
+@keyframes rocket-movement { 100% {transform: translate(400px,-100px);} }
+
+.object_rocket{
+  animation: rocket-movement 50s linear infinite both running;
+}
+
+.awards{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.awards img{
+  width: 250px;
+  margin: auto;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  text-align: center;
+
+}
+
+.awards-ul li{
+  font-size: .9rem;
+}
+
+}
